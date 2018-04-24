@@ -1,0 +1,11 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "redux-page": {
+      "aliases": [ "rxpg" ],
+      "description": "Generates a entire redux page module.",
+      "factory": "./redux-page/index#reduxPage",
+      "schema": "./redux-page/schema.json"
+    }
+  }
+}

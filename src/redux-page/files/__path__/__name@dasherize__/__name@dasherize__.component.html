@@ -1,0 +1,7 @@
+<app-theme [loading]="(page$ | async).get('title')">
+
+  <h2>
+    {{(page$ | async).get('title')}}
+  </h2>
+
+</app-theme>

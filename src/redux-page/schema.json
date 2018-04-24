@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchemanticsForPageRedux",
+  "title": "Redux Page Schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "default": "name"
+    },
+    "path": {
+      "type": "string",
+      "default": "app"
+    },
+    "sourceDir": {
+      "type": "string",
+      "default": "src"
+    }
+  }
+}
