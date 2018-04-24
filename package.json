@@ -1,7 +1,7 @@
 {
-  "name": "redux-components",
-  "version": "1.0.0",
-  "description": "Schematics for redux components",
+  "name": "ngrx-components-schematics",
+  "version": "1.0.2",
+  "description": "Schematics for ngrx components",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine **/*_spec.js"
@@ -9,7 +9,11 @@
   "keywords": [
     "schematics"
   ],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mush20/ngrx-components-schematics.git"
+  },
+  "author": "Pedro Mello",
   "license": "MIT",
   "schematics": "./src/collection.json",
   "dependencies": {
