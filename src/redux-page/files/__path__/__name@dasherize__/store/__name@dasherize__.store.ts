@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { StoreService, IAppState } from '@app/store';
 import { PageState } from './<%=dasherize(name)%>.model';
-import * as PageActions from './<%=dasherize(name)%>.actions';
+import { StateID, Init } from './<%=dasherize(name)%>.actions';
 
 @Injectable()
 export class <%= classify(name) %>Store extends StoreService<PageState> {
 
   readonly selector = (state: IAppState): PageState => {
-    return state[PageActions.StateID];
+    return state[StateID];
   }
 
   constructor(public store: Store<IAppState>) {
@@ -16,7 +16,7 @@ export class <%= classify(name) %>Store extends StoreService<PageState> {
   }
 
   init(): void {
-    this.dispatch(new PageActions.Init());
+    this.dispatch(new Init());
   }
 
 }

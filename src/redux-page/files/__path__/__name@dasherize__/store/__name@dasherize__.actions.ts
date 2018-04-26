@@ -3,19 +3,15 @@ import { uniqueAction } from '@app/utils';
 
 export const StateID: string = '<%= classify(name) %>';
 
-export const INIT = uniqueAction(StateID, 'Init');
-export const INIT_SUCCESS = uniqueAction(StateID, 'Init Success');
+export const PageActions = {
+    INIT: uniqueAction(StateID, 'Init')
+}
 
 export class Init implements Action {
-
-  readonly type = INIT;
+  readonly type = PageActions.INIT;
 }
 
-export class InitSuccess implements Action {
 
-  readonly type = INIT_SUCCESS;
-}
 
 export type ActionTypes =
-  | Init
-  | InitSuccess;
+  | Init;
